@@ -11,7 +11,7 @@ Variables
 */
 :root {
   --primaryLightColor: #d4e6a5;
-  --primaryColor: #476a2e;
+  --primaryColor: #50b507;
   --primaryDarkColor: #c02c03;
   --primaryFont: "Open Sans", sans-serif;
   --slantedFont: "Solway", serif;
@@ -24,7 +24,7 @@ Variables
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
+  --mainSpacing: 0.1rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
@@ -150,11 +150,15 @@ Navbar
 */
 .navbar {
   background: var(--mainWhite);
+  width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--primaryColor);
   box-shadow: var(--lightShadow);
+  position: fixed;
+  top: 0;
+  left:0;
 }
 .nav-center {
   display: flex;
@@ -229,6 +233,7 @@ Cocktails List
   text-align: center;
   margin-bottom: 3.5rem;
   margin-top: 1rem;
+  color: #000;
 }
 .cocktails-center {
   width: var(--smallWidth);
